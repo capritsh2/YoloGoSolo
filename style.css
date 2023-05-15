@@ -1,0 +1,445 @@
+*{
+            margin: 0;
+            padding: 0;
+        font-family: 'Poppins', sans-serif;
+          }
+              
+        nav{
+            display: flex;
+            padding: 5% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav img{
+            width:150px;
+        }
+        .nav-links{
+            flex: 1;
+            text-align:right;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .nav-links ul li a{
+            color:#ff9398;
+          text-decoration: none;
+          font-size: 15px;
+        }
+        .nav-links ul li ::after{
+          content:'';
+          width:0%;
+          height: 3px;
+          background: #ff9398;
+          display: block;
+          margin: auto;
+          transition: 0.5s;
+        }
+        .nav-links ul li :hover::after{
+          width:100%; 
+        }
+        .text-box{
+        width: 100%;
+        color: #ffffff;
+        position: absolute;
+        top: -15%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        text-align: center;
+        background-image:url('./images/bannerimg.png');
+        background-position:center 100%;
+        height:100%;
+        }
+        
+        .text-box h1{
+          font-size: 62px;
+          padding: 50px;
+        }
+        .text-box p{
+          margin: 10px 0 40px;
+          font-size: 20px;
+          color: #ffffff;
+          padding: 70px;
+        }
+          .hero-btn{
+            display: inline-block;
+            text-decoration: none;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+          
+          }
+        .hero-btn:hover{
+          border: 1px solid #ff9398;
+          background: #ff9398;
+          transition: 1s;
+        }
+        
+        
+        /*----- page why yolo go solo-----*/
+        .travel{
+          width:80%;
+          margin: auto;
+          text-align: center;
+          padding-top: 25px;  
+        }
+        h1{
+            font-size: 45px;
+            font-weight: 600px;
+            color: #ff9398;
+        
+          }
+        p1{
+            color:#ebd47e;
+            font-size:13px;
+            font-weight: 300px;
+            line-height: 25px;
+            padding: 10px;  
+          }
+        .row{
+          margin-top: 5%;
+          display:flex;
+          justify-content: space-between;
+        }
+        .travel-col{
+          flex-basis: 31%;
+          background:#f7f2e4;
+          border-radius: 10px;
+          margin-bottom: 5%;
+          padding: 30px 22px;
+          box-sizing:border-box;
+          transition: 0.5s;
+        }
+        
+        h3{
+        text-align: center;
+        margin: 20px 0;
+        color: #ff9398;
+        }
+        
+          
+          
+        /*-----page places-----*/
+        .places{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top:35px;
+        }
+        h1{
+        font-size: 45px;
+        font-weight: 600px;
+        color: #FF9398;
+        }
+        
+        .places-col{
+          flex-basis: 32%;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          position: relative;
+          overflow: hiddlen;
+        
+        }
+        .places-col img{
+          width: 100%;
+          display: block;
+        }
+        
+        .layer{
+          background:transparent;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: 0.5s;
+        }
+        
+        .layer:hover{
+          background: rgba(252, 212,126, 0.7);
+        }
+        
+        .layer h5{
+        width: 100%;
+        font-weight: 500;
+        color:#fcfcfc;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        }
+        .layer:hover h5{
+          bottom: 49%;
+          opacity: 1;
+        }
+        
+        #malaysia{
+          text-decoration: none;
+          padding: 70px;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 125px;
+          margin-left: 125px;
+          background-color: #f7f2e4;
+          color:#ebd47e;
+        }
+        #malaysia a{
+          text-decoration: none;
+          color:#ebd47e;
+          
+        }
+        #japan{
+          text-decoration: none;
+          padding: 70px;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 125px;
+          margin-left: 125px;
+          background-color: #f7f2e4;
+          color:#ebd47e;
+        }
+        #japan a{
+          text-decoration: none;
+          color:#ebd47e;
+        }
+        
+        #turkey{
+          text-decoration: none;
+          padding: 70px;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 125px;
+          margin-left: 125px;
+          background-color: #f7f2e4;
+          color:#ebd47e;
+          
+        }
+        #turkey a{
+          text-decoration: none;
+          color:#ebd47e;
+        }
+        
+        /*-----page travel tips-----*/
+        
+        .traveltips{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top:25px;
+        
+        }
+        
+        .traveltips-col{
+         flex-basis: 32%;
+         border-radius: 10px;
+         margin-bottom: 30px;
+         position: relative;
+         overflow: hidden;
+         
+            
+        }
+        .traveltips-col img{
+        width: 100%;
+        
+        }
+        
+        .traveltips-col p{
+        padding: 0;
+        
+        }
+        
+        .traveltips-col h3{
+        margin-top:16px;
+        margin-bottom:15px;
+        text-align: center;
+        color: #ff9398;
+        text-decoration: none;
+        
+        }
+        
+        .traveltips-col a{
+        text-decoration: none;
+          
+        }
+        
+        /*-----map-----*/
+        /**
+         * A transparent 3d world map using the D3 library with SVG.
+         * 
+         * For a Canvas version see: https://codepen.io/chrislaskey/pen/reYxeM
+         *
+         * Combines Jason Davies SVG World Tour bl.ocks map:
+         * https://bl.ocks.org/jasondavies/4183701
+         *
+         * With the SVG Transparent World Map bl.ocks map:
+         * https://bl.ocks.org/emeeks/c88435cb568dcaf11308
+         **/
+        
+        .world-outline {
+          fill: none;
+          stroke: rgba(0, 0, 0, 0.1);
+          stroke-width: 1.0px;
+        }
+        
+        .back-country {
+          fill: #dadac4;
+          stroke: #fff;
+          stroke-width: 0.0px;
+          stroke-linejoin: round;
+        }
+        
+        .back-line {
+          fill: none;
+          stroke: #000;
+          stroke-opacity: .05;
+          stroke-width: .5px;
+        }
+        
+        .country {
+          fill: #737368;
+          stroke: #fff;
+          stroke-width: 0.0px;
+          stroke-linejoin: round;
+        }
+        
+        .line {
+          fill: none;
+          stroke: #000;
+          stroke-opacity: .08;
+          stroke-width: .5px;
+        }
+        
+        text {
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          text-anchor: middle;
+        }
+        
+          .hero-btn-new{
+            display: inline-block;
+            text-decoration: none;
+            color: #ebd47e;
+            border: 1px solid #ebd47e;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+          
+          }
+        .hero-btn-new:hover{
+          border: 1px solid #ff9398;
+          background: #ff9398;
+          transition: 1s;
+        }
+        
+        .text-box-new{
+        width: 100%;
+        color: #ff9398;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,50%);
+        text-align: center;
+        height:100%;
+        }
+        
+        /* tips page */ 
+        
+        html{
+          scroll-behavior: smooth;
+        }
+        
+        #research{
+          text-decoration: none;
+          padding: 70px;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 100px;
+          margin-left: 100px;
+          background-color: #f7f2e4;
+          
+        }
+          #research a{
+          text-decoration: none;
+          color:#ff9398;
+          }
+        #packing{
+          text-decoration: none;
+          padding: 70px;
+          background-color: #f7f2e4;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 100px;
+          margin-left: 100px;
+        }
+        
+        .shop-card {
+          margin: 10px;
+          width: 250px;
+          height: 270px;
+          background: #f5f5f5;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+          border-radius: 5px;
+          padding: 20px;
+          text-align: center;
+          font-family: 'Open Sans Condensed', sans-serif;
+        }
+        
+        .shop-card .title {
+          font-weight: 900;
+          text-transform: uppercase;
+          font-size: 25px;
+          color: #ff9398;
+          margin-bottom: 5px;
+        }
+        
+        .shop-card .desc {
+          font-size: 15px;
+          opacity: .8;
+          margin-bottom: 3px;
+          color: #ebd47e;
+        }
+        
+        .shop-card a{
+         color: #ff9398;
+        }
+        .product {
+          margin: 10px 0;
+        }
+        
+        .product img {
+          width: 100%;
+        }
+        
+        .cta {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        
+        .price {
+          color: #28406b;
+          font-size: 22px;
+          font-weight: 900;
+          transition: color .3s ease-in-out;
+        }
+        
+        #location{
+          text-decoration: none;
+          padding: 70px;
+          background-color: #f7f2e4;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          margin-right: 100px;
+          margin-left: 100px;
+        }
